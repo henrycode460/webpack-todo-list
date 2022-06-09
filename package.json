@@ -1,0 +1,31 @@
+{
+  "name": "webpack-todo-list",
+  "version": "1.0.0",
+  "description": "This repository will contain written code that have the functionality of a todo list using HTML5, CSS3, and JavaScript.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/henrycode460/webpack-todo-list.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/henrycode460/webpack-todo-list/issues"
+  },
+  "homepage": "https://github.com/henrycode460/webpack-todo-list#readme",
+  "devDependencies": {
+    "css-loader": "^6.7.1",
+    "html-webpack-plugin": "^5.5.0",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.9.2"
+  },
+  "dependencies": {
+    "style-loader": "^3.3.1",
+    "webpack-dev-server": "^4.9.1"
+  }
+}
