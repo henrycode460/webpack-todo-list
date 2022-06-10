@@ -1,82 +1,101 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  background-color: rgb(240, 245, 245);
+  background-color: rgb(189, 189, 231);
 }
 
-.heading {
+#clear {
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  padding: 25px;
+  background: rgb(158, 158, 207);
+}
+
+section {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-div {
+  padding: 15px;
+  border-bottom: 1px solid #d0d0d0;
+  display: flex;
   align-items: center;
 }
 
-.heading-text {
-  color: rgb(202, 202, 238);
+input {
+  border: none;
+  padding: 15px;
+  font-style: oblique;
+  font-size: 18px;
+  border-bottom: 1px solid #d0d0d0;
+  color: rgb(136, 136, 209);
 }
 
-.list-main-container {
-  max-width: 500px;
-  margin: 100px auto;
-  background: #fff;
-  padding: 10px 10px;
-  border: 4px solid rgb(202, 202, 238);
+p {
+  padding: 10px;
 }
 
-.entertaskContainer {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  gap: 21px;
+#clear:hover {
+  cursor: pointer;
 }
 
-.listItemStyle {
-  margin-left: -213px;
-  list-style: none;
+i {
+  float: right;
 }
 
-.listItemcontainerStyle {
-  display: flex;
-  justify-content: space-between;
+#header {
+  font-weight: bold;
+  padding: 15px;
+  color: rgb(136, 136, 209);
 }
 
-.fa-trash {
+.listContent {
+  flex: 2;
+  border: none;
+  margin: 18px 0;
+  color: rgb(136, 136, 209);
+}
+
+.main-div {
+  margin: 100px 100px;
+  width: 40vw;
+  font-family: Poppins, serif;
+  font-size: 18px;
+  background-color: #fff;
+}
+
+.listContent-disable {
+  text-decoration: line-through;
+  color: red;
+}
+
+.fa-solid,
+.fas {
+  font-family: sans-serif;
+  font-weight: 900;
+  color: rgb(112, 112, 205);
+}
+
+.fa-trash-alt {
+  color: red;
+}
+
+.remove-icon-active {
   display: none;
 }
 
-span {
-  margin-left: 20px;
-  color: rgb(110, 110, 198);
+.icon2 {
+  display: none;
 }
 
-.fas.fa-ellipsis-vertical {
-  float: right;
-  color: rgb(202, 202, 238);
-}
-
-#todoInput {
-  border: none;
-  height: 41px;
-  border-bottom: 2px solid rgb(202, 202, 238);
-  margin-top: 20px;
-}
-
-.todoContainer {
-  margin-top: 20px;
-}
-
-hr {
-  margin-top: 17px;
-  color: rgb(202, 202, 238);
-}
-
-#todoclearBtn {
-  height: 48px;
-  margin: 0 auto;
-  padding: 10px 10px;
-  width: 100%;
-  border: none;
+.changeBg {
+  background-color: #efefe3;
 }
