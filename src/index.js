@@ -1,5 +1,6 @@
- import './style.css';
- class MyObjects {
+import './style.css';
+
+class MyObjects {
   constructor(description, completed, index) {
     this.description = description;
     this.completed = completed;
