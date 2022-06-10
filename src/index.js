@@ -1,5 +1,5 @@
 import './style.css';
-import {todoList, addToLocalStorage} from './myfunctions.js';
+import {todoList, addToLocalStorage} from './myfunctions.js'; // eslint-disable-line
 
 class MyObjects {
   constructor(description, completed, index) {
@@ -9,7 +9,7 @@ class MyObjects {
   }
 }
 
-const array = [];
+let array = [];
 
 const dataEntry = document.querySelector('.dataEntry');
 dataEntry.addEventListener('keypress', (e) => {
@@ -43,4 +43,4 @@ window.addEventListener('load', () => {
   }
 });
 
-export { array};
+export default { array };

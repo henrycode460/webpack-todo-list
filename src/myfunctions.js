@@ -1,4 +1,4 @@
-import {array} from './index.js';
+import {array} from './index.js'; // eslint-disable-line
 
 const todoList = () => {
   const form = document.querySelector('.form');
