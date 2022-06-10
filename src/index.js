@@ -1,5 +1,5 @@
 import './style.css';
-import { todoList, addToLocalStorage} from './myfunctions';
+import { todoList, addToLocalStorage } from './myfunctions.js';
 
 class MyObjects {
   constructor(description, completed, index) {
@@ -9,7 +9,7 @@ class MyObjects {
   }
 }
 
-export let array = [];
+let array = [];
 
 const dataEntry = document.querySelector('.dataEntry');
 dataEntry.addEventListener('keypress', (e) => {
@@ -42,3 +42,5 @@ window.addEventListener('load', () => {
     array = getFromLocalStorage;
   }
 });
+
+export {array};
