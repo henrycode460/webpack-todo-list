@@ -1,4 +1,4 @@
- import { array } from './index.js';
+import {array} from './index.js';
 
 const todoList = () => {
   const form = document.querySelector('.form');
