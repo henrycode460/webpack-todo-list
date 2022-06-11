@@ -1,3 +1,5 @@
+@import url(https://use.fontawesome.com/releases/v6.1.1/css/all.css);
+
 body {
   background-color: rgb(189, 189, 231);
 }
@@ -84,9 +86,9 @@ i {
   color: rgb(112, 112, 205);
 }
 
-/* .fa-trash-alt {
+.fa-trash-alt {
   color: red;
-} */
+}
 
 .remove-icon-active {
   display: none;
