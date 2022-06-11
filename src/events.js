@@ -119,4 +119,5 @@ class MyObjects {
     array = JSON.parse(localStorage.getItem('list')) || [];
     array.forEach((task) => todoList(task));
   };
+
   
