@@ -61,6 +61,8 @@ const todoList = ({ completed, description, index }) => {
   });
 
   editBtn.addEventListener('click', () => {
+    editBtn.classList.toggle('remove-icon-active');
+    deleteBtn.classList.toggle('show');
     const editInput = document.createElement('input');
     editInput.type = 'text';
     editInput.className = 'listContent';
