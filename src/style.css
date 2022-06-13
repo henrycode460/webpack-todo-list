@@ -88,12 +88,10 @@ i {
 
 .fa-trash-alt {
   color: red;
-
 }
 
-
 .remove-icon-active {
- visibility: hidden;
+  visibility: hidden;
 }
 
 .icon2 {

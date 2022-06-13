@@ -1,7 +1,6 @@
 import './style.css';
-import "./font_awesome/css/all.css"
+import './font_awesome/css/all.css';
 import { clearAllCompletedTask, addData, populateUI } from './events.js';
-
 
 const clearAll = document.querySelector('#clear');
 clearAll.addEventListener('click', clearAllCompletedTask);
