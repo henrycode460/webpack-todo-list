@@ -1,7 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin'); // eslint-disable-line
 const path = require('path');
 
-
 module.exports = {
   entry: './src/index.js',
   output: {
@@ -28,9 +27,13 @@ module.exports = {
         type: 'asset/resource',
 
       },
-    
+      {
+        test: /\.html$/i,
+        loader: "html-loader",
+      },
+
     ],
- 
+
   },
 
   devServer: {

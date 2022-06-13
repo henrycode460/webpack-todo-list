@@ -10,7 +10,7 @@ class MyObjects {
   }
   }
   
-let array = [];
+  let array = [];
 const addToLocalStorage = () => {
 localStorage.setItem('list', JSON.stringify(array));
   };
@@ -39,7 +39,6 @@ localStorage.setItem('list', JSON.stringify(array));
     deleteBtn.classList.toggle('icon2');
     listText.classList.toggle('listContent-disable');
     list.classList.toggle('changeBg');
-
     const i = parseInt(list.id, 10);
     if (list.classList.contains('changeBg')) {
     array[i - 1].completed = true;
