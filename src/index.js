@@ -1,25 +1,12 @@
 import './style.css';
-import { displayListItem, inputField } from './todoListSelector.js';
+import './font_awesome/css/all.css';
+import { clearAllCompletedTask, addData, populateUI } from './events.js';
 
-const addtodoItem = (todovalue) => {
-  const todoContainer = document.createElement('div');
-  todoContainer.classList.add('todoContainer');
-  todoContainer.innerHTML = `
-            <input type="checkbox" class="checkbox">
-            <span>${todovalue}</span>
-            <i class="fas fa-ellipsis-vertical"></i>
-            <i class="fas fa-trash"></i>
-            <hr>
+const clearAll = document.querySelector('#clear');
+clearAll.addEventListener('click', clearAllCompletedTask);
 
-        `;
+const dataEntry = document.querySelector('.dataEntry');
+dataEntry.addEventListener('keypress', addData);
 
-  displayListItem.appendChild(todoContainer);
-};
-
-inputField.addEventListener('keypress', (e) => {
-  if (e.key === 'Enter' && inputField.value) {
-    e.preventDefault();
-    addtodoItem(inputField.value);
-    inputField.value = '';
-  }
-});
+// Window Load event
+window.addEventListener('load', populateUI);

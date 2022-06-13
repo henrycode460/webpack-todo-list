@@ -27,8 +27,13 @@ module.exports = {
         type: 'asset/resource',
 
       },
+      {
+        test: /\.html$/i,
+        loader: 'html-loader',
+      },
 
     ],
+
   },
 
   devServer: {
